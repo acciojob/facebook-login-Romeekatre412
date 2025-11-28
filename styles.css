@@ -1,59 +1,107 @@
-body{
-	background-color:#f6f6f6;
-	display:flex;
-	justify-content:center;
-	height:100vh;
-}
-.left
-{
-	width:450px;
-	margin-top:70px;
-	display:inline-block;
-}
-.login-box{
-	display:flex;
-	width:300px;
-	background-color:white;
-	padding:20px;
-	border-radius:5px;
-	box-shadow:0 0 10px #ccc;
-	flex-direction:column;
-	gap:10px;
-}
-.login-box input{
-	border:1px solid #ccc;
-	border-radius:5px;
-	padding:10px;
-}
-.login-btn{
-	background-color:#1877f2;
-	border-radius:5px;
-	padding:10px 20px;
-}
-.signup
-{
-	background-color:#42b72a;
-	border:1px solid #ccc;
-	border-radius:5px;
-	padding:10px;
-}
-.forgot
-{
-	text-decoration:none;
-	color:#1877f2;
-}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
+  .container {
+    width: 100%;
+    max-width: 1150px;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
 
+  .left {
+    width: 450px;
+    margin-top: 70px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: left;
+  }
 
+  .left img {
+    width: 320px;
+    height: auto;
+    display: block;
+    margin-bottom: 18px;
+  }
 
+  .left p {
+    color: #111;
+    font-size: 16px;
+    max-width: 420px;
+    line-height: 1.6;
+    margin: 0;
+  }
 
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
 
+  form.form {
+    display: flex;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+  }
 
+  .form input[type="text"],
+  .form input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+  }
 
+  .form button[type="submit"] {
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+  }
 
+  .form .forgotten {
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 6px;
+  }
 
+  .signup {
+    margin-top: 10px;
+    background-color: #42b72a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+  }
 
-
-
-
-
+  .form-wrap {
+    width: 320px;
+    box-sizing: border-box;
+  
